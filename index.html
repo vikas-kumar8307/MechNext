@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MechNext Club</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="events.html">Upcoming Events</a></li>
+      <li><a href="index.html#position-holders">Our Teams</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="overlay">
+      <h1>Welcome to MechNext Club</h1>
+      <p>Innovating mechanical engineering and robotics for the future.</p>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="quote-section">
+    <blockquote>
+      "Engineering is not only study of 45 subjects but it is moral studies of intellectual life."
+      <cite>- Prakhar Srivastav</cite>
+    </blockquote>
+  </section>
+
+  <!-- Position Holders -->
+  <section id="position-holders" class="position-holders">
+    <h2>Position Holders</h2>
+
+    <h3>Joint Secretaries</h3>
+    <div class="cards-container">
+      <div class="card">
+        <img src="images/sachin.jpeg" alt="Sachin" />
+        <a href="sachin.html">Sachin</a>
+        <p>Joint Secretary</p>
+      </div>
+      <div class="card">
+        <img src="images/vishesh.jpeg" alt="Vishesh" />
+        <a href="vishesh.html">Vishesh</a>
+        <p>Joint Secretary</p>
+      </div>
+      <div class="card">
+        <img src="images/avnee.jpeg" alt="Avnee" />
+        <a href="avnee.html">Avnee</a>
+        <p>Joint Secretary</p>
+      </div>
+      <div class="card">
+        <img src="images/om.jpeg" alt="Om Gupta" />
+        <a href="om.html">Om Gupta</a>
+        <p>Joint Secretary</p>
+      </div>
+    </div>
+
+    <h3>Senior Coordinators</h3>
+    <div class="cards-container">
+      <div class="card">
+        <img src="images/nisha.jpeg" alt="Nisha" />
+        <a href="nisha.html">Nisha</a>
+        <p>Senior Coordinator</p>
+      </div>
+      <div class="card">
+        <img src="images/maksad.jpeg" alt="Sohail" />
+        <a href="sohail.html">Sohail</a>
+        <p>Senior Coordinator</p>
+      </div>
+      <div class="card">
+        <img src="images/vishesh2.jpeg" alt="Vishesh2" />
+        <a href="vishesh2.html">Vishesh</a>
+        <p>Senior Coordinator</p>
+      </div>
+    </div>
+
+    <h3>Project Heads</h3>
+    <div class="cards-container">
+      <div class="card">
+        <img src="images/geetanjali.jpeg" alt="Geetanjali" />
+        <a href="geetanjali.html">Geetanjali</a>
+        <p>Project Head</p>
+      </div>
+      <div class="card">
+        <img src="images/chinmay.jpeg" alt="Chinmay" />
+        <a href="chinmay.html">Chinmay</a>
+        <p>Project Head</p>
+      </div>
+    </div>
+
+    <div class="group-photo">
+      <h3>Our Team</h3>
+      <img src="images/group.jpeg" alt="MechNext Club Group Photo" />
+      <p class="caption">MechNext Club - United in Innovation</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MechNext Club. All rights reserved.</p>
+  </footer>
+
+  <!-- Script to redirect Our Teams correctly from subpages -->
+  <script>
+    // Ensure smooth scrolling on index page itself
+    document.querySelectorAll('a[href="index.html#position-holders"]').forEach(link=>{
+      link.addEventListener('click',e=>{
+        if(location.pathname.endsWith('index.html')||location.pathname==='/'){
+          e.preventDefault();
+          const el=document.getElementById('position-holders');
+          if(el) el.scrollIntoView({behavior:'smooth'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>

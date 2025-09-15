@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upcoming Events - MechNext Club</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Make event cards display side-by-side */
+    .events-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .events-container .card {
+      flex: 1 1 300px;
+      max-width: 400px;
+      background-color: #1a1a1a;
+      padding: 18px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 123, 255, 0.2);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html" class="active">Upcoming Events</a></li>
+      <li><a href="index.html#position-holders">Our Teams</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+  </nav>
+
+  <section class="position-holders">
+    <h2>Upcoming Events</h2>
+
+    <div class="events-container">
+      <div class="card">
+        <a href="#">Foundation Day Celebration</a>
+        <p>
+          <strong>Date:</strong> Tomorrow<br>
+          <strong>Time:</strong> 9:00 AM – 12:00 PM<br>
+          <strong>Venue:</strong> Shakuntalam Hall
+        </p>
+        <p>
+          Join us for our annual Foundation Day, celebrating the spirit of innovation and teamwork.  
+          The event will feature robotics demonstrations, cultural performances, and special addresses from faculty and alumni.
+        </p>
+      </div>
+
+      <div class="card">
+        <a href="#">Student Project Showcase</a>
+        <p>
+          <strong>Date:</strong> Tomorrow (as part of Foundation Day)<br>
+          <strong>Venue:</strong> Shakuntalam Hall Foyer<br>
+          <strong>Time:</strong> 9:00 AM – 12:00 PM
+        </p>
+        <p>
+          Explore RC vehicles, FPV drones, and gesture-controlled robots. Interact with teams and gain inspiration for your future projects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 MechNext Club. All rights reserved.</p>
+  </footer>
+</body>
+</html>
